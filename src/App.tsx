@@ -30,6 +30,7 @@ import Documentation from "./pages/resources/Documentation";
 import Community from "./pages/resources/Community";
 
 import "./styles/global.css";
+import Dashboard from "./pages/Dashboard";  // import your Dashboard component
 
 const App = () => {
   return (
@@ -43,6 +44,9 @@ const App = () => {
           <Route path="pricing" element={<SubscriptionPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<Signup />} />
+
+          {/* Dashboard */}
+          <Route path="dashboard" element={<Dashboard />} />
 
           {/* Features */}
           <Route path="features" element={<FeaturesLanding />} />
