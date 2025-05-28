@@ -30,7 +30,7 @@ import Documentation from "./pages/resources/Documentation";
 import Community from "./pages/resources/Community";
 
 import "./styles/global.css";
-import Dashboard from "./pages/Dashboard";  // import your Dashboard component
+import Dashboard from "./pages/dashboard";  // import your Dashboard component
 
 const App = () => {
   return (
