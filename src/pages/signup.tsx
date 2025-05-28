@@ -19,7 +19,7 @@ const Signup = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch("http://localhost:5000/api/clinics/signup", {
+      const response = await fetch("https://leada-user-page.onrender.com/api/clinics/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

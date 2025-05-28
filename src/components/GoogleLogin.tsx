@@ -20,7 +20,7 @@ const LoginPage = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5000/api/clinics/login", {
+      const response = await fetch("https://leada-user-page.onrender.com/api/clinics/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -59,7 +59,7 @@ const LoginPage = () => {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/clinics/google-login?email=${encodeURIComponent(user.email)}`
+        `https://leada-user-page.onrender.com/api/clinics/google-login?email=${encodeURIComponent(user.email)}`
       );
 
       const data = await response.json();
